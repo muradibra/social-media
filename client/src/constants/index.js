@@ -1,4 +1,4 @@
-export const BASE_URL = "http://localhost:3000";
+export const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
 export const MODAL_TYPE = {
   CREATE: "CREATE",

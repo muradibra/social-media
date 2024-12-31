@@ -1,6 +1,7 @@
 import { BASE_URL } from '@/constants';
 import { unauthenticatedRoutes } from '@/constants/paths';
 import axios from 'axios';
+console.log(BASE_URL);
 
 const axiosInstance = axios.create({
   baseURL: BASE_URL,

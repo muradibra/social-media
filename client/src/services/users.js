@@ -24,8 +24,7 @@ export async function getFriends() {
 
 export async function getConversations() {
   try {
-    const resp = await axiosInstance.get(`/conversation`
-    );
+    const resp = await axiosInstance.get(`/conversation`);
     return resp.data;
   } catch (error) {
     console.error(error);

@@ -1,3 +1,4 @@
+import { BASE_URL } from "@/constants";
 import { selectUser } from "@/store/auth/authSlice";
 import { useEffect } from "react";
 import { useState } from "react";
@@ -9,7 +10,7 @@ export function useSocket() {
   const { user } = useSelector(selectUser);
 
   useEffect(() => {
-    const newSocket = io('http://localhost:3000', {
+    const newSocket = io(BASE_URL, {
       withCredentials: true,
     });
 
