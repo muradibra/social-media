@@ -16,6 +16,7 @@ import friendShipRoutes from "./routes/friendship.mjs";
 import conversationRoutes from "./routes/conversation.mjs";
 
 const app = express();
+app.set('trust proxy', 1);
 const server = createServer(app);
 initializeSocket(server);
 
