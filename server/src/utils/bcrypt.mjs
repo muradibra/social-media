@@ -1,4 +1,4 @@
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 
 export function hashPassword(password) {
   const salt = bcrypt.genSaltSync(+process.env.BCRYPT_SALT_ROUND);
